@@ -184,12 +184,7 @@ AvatarImage.prototype.getBackgroundColor = function() {
 
   var bgColors = this.options.backgroundColors
 
-  var index
-  if (this.name) {
-    index = this.name.charCodeAt(0) % bgColors.length
-  } else {
-    index = Math.floor(Math.random() * bgColors.length)
-  }
+  var index = Math.floor(Math.random() * bgColors.length)
 
   return bgColors[index]
 }
